@@ -1,0 +1,211 @@
+@import "./fonts.css";
+@import "./reset.css";
+body {
+    font-family: "Montserrat Bold", serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Стилизация container */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Стилизация intro */
+
+.wr-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.container-intro-inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wr-intro-title {
+    font-size: 140px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
+}
+
+.wr-intro-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 60px auto;
+}
+
+.wr-intro-abovetitle {
+    font-size: 72px;
+    color: #fff;
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 20px;
+}
+
+
+/* Button */
+
+.wr-intro-button {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #fff;
+    padding: 8px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.wr-intro-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Стиилизация header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Логотип в шапке */
+
+.header-logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/*  Панель nav в шапке*/
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: inline-block;
+    position: relative;
+    margin: 0 13px;
+    vertical-align: top;
+    text-decoration: none;
+    font-family: "Montserrat Regular";
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    position: absolute;
+    transition: 0.3s;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-links:hover {
+    color: #fce38a;
+}
+
+.nav-links:hover::after,
+.nav-links.active::after {
+    opacity: 1;
+}
+
+.nav-links.active {
+    color: #fce38a;
+}
+
+
+/* Intro slider */
+
+.wr-intro-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+}
+
+.wr-intro-slider-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wr-intro-slider span {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.intro-slider-item.active {
+    opacity: 1;
+}
+
+.intro-slider-item.active::before {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    z-index: 20;
+}
+
+.intro-slider-item {
+    position: relative;
+    width: 23%;
+    border-top: 3px solid #fff;
+    font-family: "Montserrat Regular";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 0;
+    opacity: 0.65;
+}
