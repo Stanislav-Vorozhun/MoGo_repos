@@ -1,7 +1,7 @@
 @import "./fonts.css";
 @import "./reset.css";
 body {
-    font-family: "Montserrat Bold", serif;
+    font-family: "Montserrat", serif;
     font-size: 15px;
     color: #333;
     line-height: 1.6;
@@ -62,8 +62,8 @@ body {
 .wr-intro-abovetitle {
     font-size: 72px;
     color: #fff;
-    font-family: "Kaushan Script", cursive;
-    margin-bottom: 20px;
+    font-family: "Kaushan", cursive;
+    margin-top: -20px;
 }
 
 
@@ -130,7 +130,7 @@ body {
     margin: 0 13px;
     vertical-align: top;
     text-decoration: none;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     color: #fff;
     transition: 0.3s;
 }
@@ -202,7 +202,7 @@ body {
     position: relative;
     width: 23%;
     border-top: 3px solid #fff;
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat";
     font-size: 18px;
     text-transform: uppercase;
     color: #fff;
