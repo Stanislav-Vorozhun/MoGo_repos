@@ -1,6 +1,7 @@
 FD-9 DB Stas Vorozhun Mogo Template
 
 Link:
+https://stanislav-vorozhun.github.io/MoGo_repos/dist/
 
 Gulp plug:
 
