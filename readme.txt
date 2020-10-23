@@ -1,0 +1,18 @@
+FD-9 DB Stas Vorozhun Mogo Template
+
+Link:
+
+Gulp plug:
+
+	"browser-sync": "2.26.13",
+        "del": "6.0.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.1",
+        "gulp-clean-css": "4.3.0",
+        "gulp-file-include": "2.2.2",
+        "gulp-group-css-media-queries": "1.2.2",
+        "gulp-imagemin": "7.1.0",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "4.1.0",
+        "gulp-ttf2woff": "1.1.1",
+        "gulp-ttf2woff2": "3.0.0"
