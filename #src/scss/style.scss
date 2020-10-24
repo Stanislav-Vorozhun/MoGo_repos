@@ -13,6 +13,14 @@ body {
     box-sizing: border-box;
 }
 
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #e5e5e5;
+    margin: 40px 0;
+}
 
 /* Стилизация container */
 
@@ -216,10 +224,16 @@ body {
     padding: 80px 0;
 }
 
+.section--devices {
+    background: url("../img/devices/devices-bg.jpg") center, no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
 .section-header {
     width: 100%;
     max-width: 950px;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
     text-align: center;
 }
 
@@ -336,7 +350,57 @@ body {
     font-size: 14px;
 }
 
+// Services
 
+.section-services {
+    display: flex;
+}
+
+.services-item {
+    position: relative;
+    flex: 1 1 0;
+    padding-left: 85px;
+    padding-right: 35px;
+}
+
+.services-icon {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+}
+
+.services-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.services-text {
+    font-size: 15px;
+    color: #999;
+}
+
+// Devices
+
+.devices {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.device-img {
+    display: block;
+}
+
+.device-img--iphone {
+    position: absolute;
+    right: 0;
+    bottom: -10vh;
+    z-index: 3;
+}
 
 
 
