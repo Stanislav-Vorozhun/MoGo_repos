@@ -22,6 +22,7 @@ hr {
     margin: 40px 0;
 }
 
+
 /* Стилизация container */
 
 .container {
@@ -219,7 +220,6 @@ hr {
 }
 
 // Section 
-
 .section {
     padding: 80px 0;
 }
@@ -270,7 +270,6 @@ hr {
 }
 
 // Cards
-
 .cards {
     display: flex;
     justify-content: space-between;
@@ -281,7 +280,7 @@ hr {
     width: 380px;
 }
 
-.cards-inner:hover .cards-inner-img {
+.cards-inner:hover .cards-item-img {
     transform: translate3d(-10px, -10px, 0);
 }
 
@@ -319,7 +318,7 @@ hr {
     top: 50%;
     left: 0;
     z-index: 2;
-    transform: translate3d(0,-50%,0);
+    transform: translate3d(0, -50%, 0);
     opacity: 0;
     transition: opacity 0.2s linear;
 }
@@ -344,13 +343,12 @@ hr {
 }
 
 // Statistics
-
 .about-statistics {
     background-color: #95e1d3;
 }
 
 .statistic {
-    display: flex; 
+    display: flex;
 }
 
 .stat-item {
@@ -378,7 +376,6 @@ hr {
 }
 
 // Services
-
 .section-services {
     display: flex;
 }
@@ -410,7 +407,6 @@ hr {
 }
 
 // Devices
-
 .devices {
     position: relative;
     width: 100%;
@@ -430,7 +426,6 @@ hr {
 }
 
 // Service
-
 .container-service {
     display: flex;
 }
@@ -440,24 +435,20 @@ hr {
 }
 
 // Accordion 
-
 .accordion-items {
     margin-bottom: 10px;
     border: 1px solid #e5e5e5;
 }
 
-.accordion-items.active
-.accordion-content {
+.accordion-items.active .accordion-content {
     display: block;
 }
 
-.accordion-items.active
-.accordion-header {
-    border-bottom-color:  #e5e5e5;
+.accordion-items.active .accordion-header {
+    border-bottom-color: #e5e5e5;
 }
 
-.accordion-items.active
-.accordion-header::after {
+.accordion-items.active .accordion-header::after {
     transform: translateY(-50%) rotate(-45deg);
     margin-top: 5px;
 }
@@ -473,7 +464,6 @@ hr {
     top: 50%;
     right: 20px;
     z-index: 3;
-    
     transform: translateY(-50%) rotate(135deg);
 }
 
@@ -505,11 +495,9 @@ hr {
     font-size: 14px;
     color: #333;
     text-transform: uppercase;
-    
 }
 
 // Reviews
-
 .reviews {
     padding: 0 6vw;
 }
@@ -551,11 +539,9 @@ hr {
 }
 
 // Social
-
 .social-items {
     display: flex;
     justify-content: center;
-
 }
 
 .socialial-icon {
@@ -569,11 +555,10 @@ hr {
     line-height: 1;
     padding: 12px 10px;
     transition: 0.3s;
-
 }
 
 .socialial-icon:hover {
-    background-color: #f38181 ;
+    background-color: #f38181;
     color: #fff;
 }
 
@@ -582,7 +567,6 @@ hr {
 }
 
 // Logotypes
-
 .logotype {
     display: flex;
     justify-content: space-between;

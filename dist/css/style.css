@@ -660,7 +660,7 @@ hr {
   width: 380px;
 }
 
-.cards-inner:hover .cards-inner-img {
+.cards-inner:hover .cards-item-img {
   -webkit-transform: translate3d(-10px, -10px, 0);
   transform: translate3d(-10px, -10px, 0);
 }
@@ -839,18 +839,15 @@ hr {
   border: 1px solid #e5e5e5;
 }
 
-.accordion-items.active
-.accordion-content {
+.accordion-items.active .accordion-content {
   display: block;
 }
 
-.accordion-items.active
-.accordion-header {
+.accordion-items.active .accordion-header {
   border-bottom-color: #e5e5e5;
 }
 
-.accordion-items.active
-.accordion-header::after {
+.accordion-items.active .accordion-header::after {
   -webkit-transform: translateY(-50%) rotate(-45deg);
   -ms-transform: translateY(-50%) rotate(-45deg);
   transform: translateY(-50%) rotate(-45deg);
