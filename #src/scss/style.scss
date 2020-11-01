@@ -291,15 +291,15 @@ hr {
     width: 380px;
 }
 
-.cards-inner:hover .cards-item-img {
+.cards-item:hover .cards-item-img {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.cards-inner:hover .cards-item-img img {
+.cards-item:hover .cards-item-img img {
     opacity: 0.1;
 }
 
-.cards-inner:hover .cards-item-text {
+.cards-item:hover .cards-item-text {
     opacity: 1;
 }
 
