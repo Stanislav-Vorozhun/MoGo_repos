@@ -23,7 +23,7 @@ hr {
 }
 
 
-/* Стилизация container */
+/* Container */
 
 .container {
     width: 100%;
@@ -32,7 +32,7 @@ hr {
 }
 
 
-/* Стилизация intro */
+/*  Intro */
 
 .wr-intro {
     display: flex;
@@ -98,7 +98,7 @@ hr {
 }
 
 
-/* Стиилизация header */
+/*  Header */
 
 .header {
     position: absolute;
@@ -117,7 +117,7 @@ hr {
 }
 
 
-/* Логотип в шапке */
+/* Logo */
 
 .header-logo {
     font-size: 30px;
@@ -126,7 +126,7 @@ hr {
 }
 
 
-/*  Панель nav в шапке*/
+/*  Nav */
 
 .nav {
     font-size: 14px;
@@ -233,6 +233,17 @@ hr {
 
 .section--background {
     background-color: #f8f8f8;
+}
+
+.section--clients {
+    background: url("../img/clients/clients-bg.jpg") center, no-repeat;
+    background-size: cover;
+}
+
+.section-map {
+    padding: 40px;
+    background: url("../img/map-bg.jpg") center,no-repeat;
+    background-size: cover;
 }
 
 .section-header {
@@ -627,3 +638,179 @@ hr {
     font-weight: 300;
     font-style: italic;
 }
+
+// Clients
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.clients-item {
+    width: 50%;
+    position: relative;
+    padding: 0 45px 0 175px ;
+    margin-bottom: 60px;
+    
+}
+
+.clients-avatar {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.clients-name {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.clients-prof {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #333;
+
+}
+
+.clients-text {
+    font-size: 15px;
+    color: #999;
+}
+
+.clients-text::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
+}
+
+// Blog
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.blog-items {
+    width: 31%;
+}
+
+.blog-header {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.blog-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-date {
+   position: absolute;
+   background-color: #95e1d3;
+   text-align: center;
+   bottom: 10px;
+   padding: 10px 20px;
+   left: -10px;
+   z-index: 3; 
+}
+
+.date-day {
+   font-size: 30px;
+   font-weight: 700; 
+   font-style: normal;
+   line-height: 1;
+   color: #fff;
+}
+
+.date-month {
+    
+    font-size: 15px;
+    font-style: italic;
+    color: #fff;
+
+}
+
+.blog-content {
+    margin-bottom: 14px;
+}
+
+.blog-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-title a:hover {
+    text-decoration: underline;
+}
+
+.blog-text {
+    font-size: 15px;
+    color: #999;
+}
+
+.blog-stat {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 14px;
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.blog-stat-item{
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.blog-stat-item i {
+    color: #95e1d3;
+}
+
+// Map
+
+.map {
+   text-align: center; 
+}
+
+.section-map-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f38181;
+}
+
+.section-map-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px auto 0;
+}
+
+.section-map-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
