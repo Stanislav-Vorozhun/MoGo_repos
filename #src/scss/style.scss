@@ -242,7 +242,7 @@ hr {
 
 .section-map {
     padding: 40px;
-    background: url("../img/map-bg.jpg") center,no-repeat;
+    background: url("../img/map-bg.jpg") center, no-repeat;
     background-size: cover;
 }
 
@@ -640,7 +640,6 @@ hr {
 }
 
 // Clients
-
 .clients {
     display: flex;
     flex-wrap: wrap;
@@ -650,9 +649,8 @@ hr {
 .clients-item {
     width: 50%;
     position: relative;
-    padding: 0 45px 0 175px ;
+    padding: 0 45px 0 175px;
     margin-bottom: 60px;
-    
 }
 
 .clients-avatar {
@@ -677,7 +675,6 @@ hr {
     font-style: italic;
     font-weight: 300;
     color: #333;
-
 }
 
 .clients-text {
@@ -695,11 +692,9 @@ hr {
 }
 
 // Blog
-
 .blog {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .blog-items {
@@ -718,29 +713,27 @@ hr {
 }
 
 .blog-date {
-   position: absolute;
-   background-color: #95e1d3;
-   text-align: center;
-   bottom: 10px;
-   padding: 10px 20px;
-   left: -10px;
-   z-index: 3; 
+    position: absolute;
+    background-color: #95e1d3;
+    text-align: center;
+    bottom: 10px;
+    padding: 10px 20px;
+    left: -10px;
+    z-index: 3;
 }
 
 .date-day {
-   font-size: 30px;
-   font-weight: 700; 
-   font-style: normal;
-   line-height: 1;
-   color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    color: #fff;
 }
 
 .date-month {
-    
     font-size: 15px;
     font-style: italic;
     color: #fff;
-
 }
 
 .blog-content {
@@ -777,8 +770,8 @@ hr {
     font-style: italic;
 }
 
-.blog-stat-item{
-    display:inline-block;
+.blog-stat-item {
+    display: inline-block;
     vertical-align: top;
     margin-right: 10px;
 }
@@ -788,9 +781,8 @@ hr {
 }
 
 // Map
-
 .map {
-   text-align: center; 
+    text-align: center;
 }
 
 .section-map-title {
@@ -814,3 +806,162 @@ hr {
     color: inherit;
 }
 
+// Footer
+.footer {
+    padding-top: 65px;
+    background-color: #f7f5f5;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+
+.footer-colum--logo {
+    width: 40%;
+}
+
+.footer-colum--blog {
+    width: 29%;
+}
+
+.footer-colum--instagramm {
+    width: 22%;
+}
+
+.footer-logo {
+    display: inline-block;
+    font-size: 46px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.footer-social {
+    margin-bottom: 25px;
+}
+
+.footer-text {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.social-followers {
+    font-size: 15px;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.social-content {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.footer-social a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #95e1d3;
+}
+
+.colum-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    margin: 30px 0;
+}
+
+// Subscribe
+.subscribe {
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+}
+
+.subscribe-input {
+    width: 60%;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    font-family: "Montserrat Regular";
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #333;
+    padding: 12px;
+}
+
+.subscribe-input:focus {
+    outline: 0;
+}
+
+.subscribe-input::placeholder {
+    color: #ccc;
+}
+
+.subscribe-button {
+    width: 40%;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    background-color: #95e1d3;
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 12px 30px;
+    transition: .7s;
+}
+
+.subscribe-button:hover {
+    background-color: #79b9ae;
+}
+
+.subscribe-button:focus {
+    outline: 0;
+}
+
+// Blogs
+.blogs-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blogs-img {
+    width: 120px;
+    height: 80px;
+}
+
+.blogs-content {
+    padding-left: 20px;
+}
+
+.blogs-title {
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+}
+
+.blogs-title:hover {
+    text-decoration: underline;
+}
+
+.blogs-date {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
