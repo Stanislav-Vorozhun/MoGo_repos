@@ -965,3 +965,22 @@ hr {
     font-weight: 300;
     color: #999;
 }
+
+// Instagram
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.instagram-item {
+    width: 32%;
+    border-bottom: 1px solid #fff;
+    
+}
+
+.instagram-item img {
+    display: block;
+}
