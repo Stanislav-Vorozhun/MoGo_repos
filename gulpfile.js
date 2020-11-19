@@ -87,9 +87,17 @@ function css() {
         .pipe(browsersync.stream())
 }
 
+function js() {
+    return src(path.src.js)
+        .pipe(fileinclude())
+        .pipe(dest(path.build.js))
+        .pipe(browsersync.stream())
+}
+
 function watchFiles(params) {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
+    gulp.watch([path.watch.js], js)
     gulp.watch([path.watch.img], images);
 
 }
@@ -122,13 +130,14 @@ function clean(params) {
 
 }
 
-let build = gulp.series(clean, gulp.parallel(css, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(css, js, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts = fonts;
 exports.images = images;
 exports.css = css;
 exports.html = html;
+exports.js = js;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
