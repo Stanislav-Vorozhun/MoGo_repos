@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     // fixed nav panel
 
@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     checkScroll(scrollOffset);
 
-    $(window).on('scroll', function (e) {
+    $(window).on('scroll', function(e) {
         scrollOffset = $(this).scrollTop();
         checkScroll(scrollOffset);
     });
@@ -16,31 +16,30 @@ $(document).ready(function () {
     function checkScroll(scrollOffset) {
         if (scrollOffset >= headContent) {
             headerH.addClass('fixed');
-        }
-        else {
+        } else {
             headerH.removeClass('fixed');
         }
     }
 
     // scroll nav items
 
-    $('[data-scroll]').on('click', function (e) {
+    $('[data-scroll]').on('click', function(e) {
         e.preventDefault();
 
         let blockId = $(this).data('scroll'),
             blockOffset = $(blockId).offset().top;
-            
+
 
         $('html, body').animate({
             scrollTop: blockOffset
-        }, 800);
+        }, 850);
 
-        
+
     });
 
     // mobile menu controll
 
-    $(".header__menu-btn").click(function (e) {
+    $(".header__menu-btn").click(function(e) {
         $(this).toggleClass("header__menu-btn--close");
         $(".header-nav").toggleClass("header-nav--opened");
     });
@@ -73,7 +72,7 @@ $(document).ready(function () {
         headerSliderInterval = setInterval(headerSliderSwitch, headerSliderDelay);
 
         // reset process line for each slide
-        headerSliderSlides.forEach(function (currentValue) {
+        headerSliderSlides.forEach(function(currentValue) {
             $(currentValue).find(".process .process-filled").stop().css({ width: 0 });
         });
 
@@ -91,29 +90,8 @@ $(document).ready(function () {
     }
 
     // click on slide control
-    $(".section--header .slides-item").click(function (e) {
+    $(".section--header .slides-item").click(function(e) {
         headerSliderSwitch(headerSliderSlides.indexOf(e.currentTarget));
     });
     // -- slider
-
-    // slow scroll to Learn More
-    $(".js-anchor").click(function () {
-        var elementClick = $(this).attr("href")
-        var destination = $(elementClick).offset().top;
-        jQuery("html:not(:animated)").animate({
-            scrollTop: destination
-        }, 800);
-        return false;
-    });
-
-    $('[data-collapse]').on('click', function(e) {
-        e.preventDefault();
-
-        let $this = $(this);
-        let blockId = $this.data('collapse');
-
-        $this.toggleClass('active');
-        
-    })
- 
 });

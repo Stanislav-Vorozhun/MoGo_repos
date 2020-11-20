@@ -2082,3 +2082,33 @@ hr {
     font-size: 10px;
   }
 }
+
+@media screen and (max-height: 540px) {
+  .section--header {
+    height: auto;
+  }
+
+  .header-nav {
+    padding-top: 0;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+  }
+
+  .works-colum {
+    width: 50%;
+  }
+
+  .logotype-items {
+    width: 30%;
+  }
+
+  .cards-item {
+    width: 33%;
+  }
+
+  .clients-item {
+    width: 50%;
+  }
+}
