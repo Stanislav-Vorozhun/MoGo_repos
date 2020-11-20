@@ -32,7 +32,7 @@ $(document).ready(function() {
 
         $('html, body').animate({
             scrollTop: blockOffset
-        }, 850);
+        }, 800);
 
 
     });
@@ -94,4 +94,15 @@ $(document).ready(function() {
         headerSliderSwitch(headerSliderSlides.indexOf(e.currentTarget));
     });
     // -- slider
+
+    $('[data-collapse]').on('click', function(e) {
+        e.preventDefault();
+
+        let $this = $(this);
+        let blockId = $this.data('collapse');
+
+        $this.toggleClass('active');
+
+    })
+
 });
