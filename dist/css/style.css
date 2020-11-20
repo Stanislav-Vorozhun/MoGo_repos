@@ -2082,3 +2082,9 @@ hr {
     font-size: 10px;
   }
 }
+
+@media screen and (max-height: 540px) {
+  .section--header {
+    height: auto;
+  }
+}
