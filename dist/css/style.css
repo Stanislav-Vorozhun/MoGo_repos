@@ -1970,7 +1970,7 @@ hr {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 540px) {
   .header__menu-btn--close {
     top: 17px;
     right: 3%;
@@ -2080,50 +2080,5 @@ hr {
 
   .blogs-title {
     font-size: 10px;
-  }
-}
-
-@media (max-height: 770px) {
-  .header-text-primary {
-    font-size: 115px;
-    line-height: 15vh;
-  }
-
-  .header-text-secondary {
-    font-size: 70px;
-  }
-
-  .slides-text {
-    margin-top: 15px;
-  }
-}
-
-@media screen and (max-height: 575px) {
-  .section--header {
-    height: auto;
-  }
-
-  .header-nav {
-    padding-top: 0;
-  }
-
-  .nav-item {
-    margin: 20px 0;
-  }
-
-  .works-colum {
-    width: 50%;
-  }
-
-  .logotype-items {
-    width: 30%;
-  }
-
-  .cards-item {
-    width: 33%;
-  }
-
-  .clients-item {
-    width: 50%;
   }
 }
