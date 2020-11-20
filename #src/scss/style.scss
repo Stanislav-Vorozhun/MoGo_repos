@@ -1332,6 +1332,19 @@ hr {
     }
 }
 
+@media (max-height: 770px) {
+    .header-text-primary {
+        font-size: 115px;
+        line-height: 15vh;
+    }
+    .header-text-secondary {
+        font-size: 70px;
+    }
+    .slides-text {
+        margin-top: 15px;
+    }
+}
+
 
 /* Mobile */
 
@@ -1422,7 +1435,7 @@ hr {
     }
 }
 
-@media screen and (max-height: 540px) {
+@media screen and (max-height: 575px) {
     .section--header {
         height: auto;
     }
